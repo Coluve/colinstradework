@@ -1,17 +1,137 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>colinstradework | Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-gray-800 font-sans">
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
-      <h1 class="text-5xl font-bold mb-6">Build Your Future With <span class="text-indigo-600">Colin's Tradework</span></h1>
-      <p class="text-lg max-w-xl mb-8">From Foundation to Finish - Colin's Got It.</p>
-      <a href="mailto:hello@colinstradework.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-xl transition">Contact Us</a>
-    </section>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General Contractor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #fafafa;
+      color: #222;
+    }
+
+    /* Navigation */
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #000;
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav .nav-links a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Main Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      gap: 3rem;
+    }
+
+    .hero img {
+      max-width: 320px;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h4 {
+      font-weight: bold;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      margin: 0 0 1rem;
+      font-weight: 800;
+    }
+
+    .hero-text p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .hero-text .button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">ContractorPro</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Reviews</a>
+      <a href="#">Schedule Appointment</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img src="/assets/contractor.jpg" alt="Smiling Contractor in Hard Hat" />
+    <div class="hero-text">
+      <h4>About Us</h4>
+      <h1>We have a proud tradition of service as a General Contractor since 1974</h1>
+      <p>
+        We headquartered in San Diego, brings over 42 years of local and national construction experience;
+        with a reputation for delivering large and unique design-build projects ahead of schedule and on budget.
+        Our company has served clients and building owners for over four decades. In that time,
+        we have found that the key to every project’s success is understanding the Owner’s needs and expectations
+        and then exceeding those expectations.
+      </p>
+      <a href="#" class="button">Read More</a>
+    </div>
+  </section>
+
+</body>
 </html>
