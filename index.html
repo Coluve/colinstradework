@@ -3,140 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>General Contractor</title>
+  <title>Colin's Tradework</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #fafafa;
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    /* Navigation */
-    nav {
+    body {
+      font-family: 'Segoe UI', sans-serif;
       background: #fff;
-      border-bottom: 1px solid #ddd;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #111;
       padding: 1rem 2rem;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      z-index: 999;
     }
 
-    nav .logo {
+    .nav-left {
+      font-size: 1.2rem;
       font-weight: bold;
-      font-size: 1.5rem;
-      color: #000;
+      color: #f1d28a;
     }
 
-    nav .nav-links {
+    .nav-center {
       display: flex;
       gap: 2rem;
-      flex-wrap: wrap;
     }
 
-    nav .nav-links a {
-      color: #0077cc;
+    .nav-center a {
       text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 0.95rem;
+      position: relative;
+    }
+
+    .nav-center a.active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+
+    .nav-right {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
       font-weight: bold;
     }
 
-    /* Main Hero Section */
     .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('https://source.unsplash.com/1600x900/?construction,architecture') no-repeat center center/cover;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      padding: 4rem 2rem;
-      gap: 3rem;
-    }
-
-    .hero img {
-      max-width: 320px;
-      height: auto;
-      border-radius: 6px;
+      text-align: center;
     }
 
     .hero-text {
-      max-width: 500px;
-    }
-
-    .hero-text h4 {
-      font-weight: bold;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 0.5rem;
+      position: absolute;
+      bottom: 10%;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     }
 
     .hero-text h1 {
-      font-size: 2rem;
-      margin: 0 0 1rem;
-      font-weight: 800;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
     }
 
     .hero-text p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #444;
-    }
-
-    .hero-text .button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background: #ffcc00;
-      color: #000;
-      font-weight: bold;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 4px;
-      border: 1px solid #eee;
+      font-size: 1.2rem;
+      margin-top: 1rem;
     }
 
     @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
+      .nav-center {
+        display: none;
       }
-      .nav-links {
-        justify-content: center;
-        margin-top: 1rem;
+
+      .nav-right {
+        font-size: 0.9rem;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
       }
     }
-  </style><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16988124785"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-16988124785');
-</script>
+  </style>
 </head>
 <body>
 
   <nav>
-    <div class="logo">ContractorPro</div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Reviews</a>
-      <a href="#">Schedule Appointment</a>
+    <div class="nav-left">COLIN'S TRADEWORK</div>
+    <div class="nav-center">
+      <a href="/" class="active">HOME</a>
+      <a href="/projects/">PROJECTS</a>
+      <a href="/services/">SERVICES</a>
+      <a href="/contact/">CONTACT</a>
+      <a href="/book/">BOOK NOW</a>
     </div>
+    <div class="nav-right">(203) 522-0215</div>
   </nav>
 
   <section class="hero">
-    <img src="/assets/contractor.jpg" alt="Smiling Contractor in Hard Hat" />
     <div class="hero-text">
-      <h4>About Us</h4>
-      <h1>We have a proud tradition of service as a General Contractor since 1974</h1>
-      <p>
-        We headquartered in San Diego, brings over 42 years of local and national construction experience;
-        with a reputation for delivering large and unique design-build projects ahead of schedule and on budget.
-        Our company has served clients and building owners for over four decades. In that time,
-        we have found that the key to every project’s success is understanding the Owner’s needs and expectations
-        and then exceeding those expectations.
-      </p>
-      <a href="#" class="button">Read More</a>
+      <h1>Colin's Tradework</h1>
+      <p>From Foundation to Finish - Colin's Got It.</p>
     </div>
   </section>
 
