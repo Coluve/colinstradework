@@ -15,20 +15,7 @@
     .btn-cta { background-color: #fffaeb; color: #204674; font-weight: 600; padding: 0.5rem 1.25rem; border-radius: 9999px; }
     .btn-cta:hover { background-color: #fcefc0; }
   </style>
-</head>
-<body class="bg-[#fffaeb] text-[#204674]">
-  <!-- Navigation -->
-  <nav class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 relative">
-      <div class="flex items-center gap-3">
-        <img src="/assets/images/logo-icon.png" alt="Logo Icon" class="w-8 h-8">
-        <div class="text-2xl font-bold text-[#204674] tracking-wide">Colin's Tradework</div>
-      </div>
-      <!-- ... rest of nav remains unchanged -->
-    </div>
-  </nav>
-</body>
-</html>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16988124785"></script>
   <script>
@@ -43,6 +30,7 @@
   <nav class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 relative">
       <div class="flex items-center gap-3">
+        <img src="/assets/images/logo-icon.png" alt="Logo Icon" class="w-8 h-8">
         <div class="text-2xl font-bold text-[#204674] tracking-wide">Colin's Tradework</div>
       </div>
       <ul class="hidden md:flex gap-6 text-sm font-semibold text-[#204674] items-center relative z-50">
@@ -176,43 +164,43 @@
     </div>
   </section>
     <!-- Quote Section -->
-  <section class="bg-white py-20 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      <div>
-        <img src="https://source.unsplash.com/800x600/?bathroom,design" class="rounded shadow" alt="Design Interior">
+    <section class="bg-[#f9f9f9] border-t border-gray-300 py-20 px-6"> 
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <img src="https://source.unsplash.com/800x600/?bathroom,design" class="rounded shadow" alt="Design Interior">
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold leading-snug mb-6">Schedule Your Free<br>Consultation</h2>
+          <form id="quoteForm" class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            <input name="firstName" type="text" placeholder="First name*" required class="px-4 py-2 border rounded">
+            <input name="lastName" type="text" placeholder="Last name*" required class="px-4 py-2 border rounded">
+            <input name="email" type="email" placeholder="Email address*" required class="px-4 py-2 border rounded">
+            <input name="phone" type="tel" placeholder="Phone number*" required class="px-4 py-2 border rounded">
+            <input name="city" type="text" placeholder="City" class="px-4 py-2 border rounded">
+            <input name="zip" type="text" placeholder="Zip code*" required class="px-4 py-2 border rounded">
+    
+            <div class="col-span-full flex items-center">
+              <input id="smsConsent" type="checkbox" class="mr-2">
+              <label for="smsConsent" class="text-xs text-gray-600">By checking this box, I consent to receive SMS from Colin’s Tradework.</label>
+            </div>
+    
+            <p class="col-span-full text-xs text-gray-500 leading-snug">Reply STOP to opt-out. Reply HELP for support. Message & data rates may apply. Messaging frequency may vary. Once you submit, we may reach out to you via phone or email, which you can opt out of at any time. Consent is not a condition of purchase. <a href="#" class="underline">Terms and Conditions</a> | <a href="#" class="underline">Privacy Policy</a></p>
+    
+            <div class="col-span-full">
+              <button type="submit" class="bg-[#a42838] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#891e2f]">Get Quote</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div>
-        <h2 class="text-3xl font-bold leading-snug mb-6">Schedule Your Free<br>Consultation</h2>
-        <form id="quoteForm" class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-          <input name="firstName" type="text" placeholder="First name*" required class="px-4 py-2 border rounded">
-          <input name="lastName" type="text" placeholder="Last name*" required class="px-4 py-2 border rounded">
-          <input name="email" type="email" placeholder="Email address*" required class="px-4 py-2 border rounded">
-          <input name="phone" type="tel" placeholder="Phone number*" required class="px-4 py-2 border rounded">
-          <input name="city" type="text" placeholder="City" class="px-4 py-2 border rounded">
-          <input name="zip" type="text" placeholder="Zip code*" required class="px-4 py-2 border rounded">
-
-          <div class="col-span-full flex items-center">
-            <input id="smsConsent" type="checkbox" class="mr-2">
-            <label for="smsConsent" class="text-xs text-gray-600">By checking this box, I consent to receive SMS from Colin’s Tradework.</label>
-          </div>
-
-          <p class="col-span-full text-xs text-gray-500 leading-snug">Reply STOP to opt-out. Reply HELP for support. Message & data rates may apply. Messaging frequency may vary. Once you submit, we may reach out to you via phone or email, which you can opt out of at any time. Consent is not a condition of purchase. <a href="#" class="underline">Terms and Conditions</a> | <a href="#" class="underline">Privacy Policy</a></p>
-
-          <div class="col-span-full">
-            <button type="submit" class="bg-[#a42838] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#891e2f]">Get Quote</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    // Future integration placeholder to Google Sheets
-    document.getElementById('quoteForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert("Form submission placeholder — connect to Google Sheets script here.");
-    });
-  </script>
+    </section>
+    
+    <script>
+      // Future integration placeholder to Google Sheets
+      document.getElementById('quoteForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("Form submission placeholder — connect to Google Sheets script here.");
+      });
+    </script>
  <!-- Footer -->
   <footer class="bg-[#3c4c59] text-white py-16 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
