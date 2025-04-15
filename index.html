@@ -3,134 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Colin's Tradework</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <title>Colin's Trade Work</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #fff;
-    }
-
-    nav {
-      background-color: #111;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed;
-      width: 100%;
-      z-index: 999;
-    }
-
-    .nav-left {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #f1d28a;
-    }
-
-    .nav-center {
-      display: flex;
-      gap: 2rem;
-    }
-
-    .nav-center a {
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-      font-size: 0.95rem;
-      position: relative;
-    }
-
-    .nav-center a.active::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 100%;
-      height: 2px;
-      background-color: white;
-    }
-
-    .nav-right {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background: url('https://source.unsplash.com/1600x900/?construction,architecture') no-repeat center center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .hero-text {
-      position: absolute;
-      bottom: 10%;
-      color: white;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    }
-
-    .hero-text h1 {
-      font-size: 3.5rem;
-      letter-spacing: 2px;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      .nav-center {
-        display: none;
-      }
-
-      .nav-right {
-        font-size: 0.9rem;
-      }
-
-      .hero-text h1 {
-        font-size: 2.2rem;
-      }
-
-      .hero-text p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16988124785"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-16988124785');
+  </script>
 </head>
-<body>
+<body class="bg-[#fdf2e9] text-[#1b365d]">
+  <!-- Header Bar -->
+  <nav class="bg-[#fdf2e9] text-[#1b365d] border-b border-blue-800 shadow z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-6 py-4">
+      <!-- Logo + Info -->
+      <div class="flex items-center space-x-4">
+        <img src="assets/images/colins-tradework-logo.png" alt="Colin's Tradework Logo" class="w-16 h-16 object-contain" />
+        <div>
+          <h1 class="text-xl font-bold text-[#1b365d]">Colin's Tradework</h1>
+          <p class="text-sm text-orange-500 font-medium">From Foundation to Finish—Colin’s Got It.</p>
+        </div>
+      </div>
 
-  <nav>
-    <div class="nav-left">COLIN'S TRADEWORK</div>
-    <div class="nav-center">
-      <a href="/" class="active">HOME</a>
-      <a href="/projects/">PROJECTS</a>
-      <a href="/services/">SERVICES</a>
-      <a href="/contact/">CONTACT</a>
-      <a href="/book/">BOOK NOW</a>
+      <!-- Nav Links -->
+      <div class="hidden md:flex space-x-6 text-lg font-medium items-center">
+        <a href="#" class="hover:text-orange-400">Home</a>
+        <a href="#projects" class="hover:text-orange-400">Projects</a>
+        <a href="#services" class="hover:text-orange-400">Services</a>
+        <a href="#team" class="hover:text-orange-400">Team</a>
+        <a href="#support" class="hover:text-orange-400">Support</a>
+        <a href="#book" class="text-orange-500 border border-orange-500 px-4 py-1 rounded hover:bg-orange-500 hover:text-white transition">Book Appointment</a>
+      </div>
     </div>
-    <div class="nav-right">(203) 522-0215</div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Colin's Tradework</h1>
-      <p>From Foundation to Finish - Colin's Got It.</p>
+  <!-- Hero -->
+  <section class="relative pt-12 pb-24 text-center">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <!-- Video Placeholder -->
+      <div class="rounded overflow-hidden shadow-lg">
+        <iframe class="w-full h-64 md:h-80 rounded" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Intro Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Pitch Text -->
+      <div class="text-left text-[#1b365d]">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Love your space! <br /> Protect your investment!</h2>
+        <ul class="list-disc list-inside space-y-2 text-lg">
+          <li>FREE consultations and estimates</li>
+          <li>Top-tier materials and tools</li>
+          <li>Reliable tradespeople you can trust</li>
+        </ul>
+        <div class="mt-6 flex gap-4">
+          <a href="#book" class="bg-orange-500 text-white font-bold px-5 py-2 rounded shadow hover:bg-orange-400">Book a Detail Appointment</a>
+          <a href="#" class="border border-blue-400 text-blue-800 px-4 py-2 rounded hover:bg-blue-100">Manage Appointment</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <footer class="bg-[#fdf2e9] text-[#1b365d] py-6 text-center border-t border-blue-800">
+    &copy; 2025 Colin's Trade Work. All rights reserved.
+  </footer>
 </body>
 </html>
