@@ -9,7 +9,14 @@
   <style>
     body { font-family: 'Inter', sans-serif; }
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    nav li:hover > div, nav li:focus-within > div { display: block; visibility: visible; opacity: 1; transition: opacity 0.2s ease; }
+    nav li:hover > div,
+nav li:focus-within > div,
+nav li > div:hover {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
     .bg-theme-beige { background-color: #fffaeb; }
     .text-theme-navy { color: #204674; }
     .btn-cta { background-color: #fffaeb; color: #204674; font-weight: 600; padding: 0.5rem 1.25rem; border-radius: 9999px; }
@@ -42,8 +49,8 @@
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">Services</a>
             <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden group-hover:block z-50 p-4 text-sm">
-              <h3 class="font-semibold mb-2">Residential Construction</h3>
-              <ul class="space-y-1">
+              <h3 class="text-md font-bold text-[#204674] mb-3 tracking-wide uppercase">Residential Construction</h3>
+              <ul class="space-y-1 text-[#204674]">
                 <li><a href="#" class="block hover:text-orange-500">New Home Construction</a></li>
                 <li><a href="#" class="block hover:text-orange-500">Home Additions and Extensions</a></li>
                 <li><a href="#" class="block hover:text-orange-500">Home Remodeling and Renovations</a></li>
@@ -59,8 +66,8 @@
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">Process</a>
             <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden group-hover:block z-50 p-4 text-sm">
-              <h3 class="font-semibold mb-2">Our Process</h3>
-              <ul class="space-y-1">
+              <h3 class="text-md font-bold text-[#204674] mb-3 tracking-wide uppercase">Our Process</h3>
+              <ul class="space-y-1 text-[#204674]">
                 <li><a href="#" class="block hover:text-orange-500">Pricing</a></li>
               </ul>
             </div>
@@ -68,8 +75,8 @@
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">Results</a>
             <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden group-hover:block z-50 p-4 text-sm">
-              <h3 class="font-semibold mb-2">Our Results</h3>
-              <ul class="space-y-1">
+              <h3 class="text-md font-bold text-[#204674] mb-3 tracking-wide uppercase">Our Results</h3>
+              <ul class="space-y-1 text-[#204674]">
                 <li><a href="#" class="block hover:text-orange-500">Before & After Gallery</a></li>
                 <li><a href="#" class="block hover:text-orange-500">Customer Testimonials</a></li>
                 <li><a href="#" class="block hover:text-orange-500">Share Your Story</a></li>
@@ -79,8 +86,8 @@
           <li class="relative group">
             <a href="#" class="hover:text-orange-600">About</a>
             <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden group-hover:block z-50 p-4 text-sm">
-              <h3 class="font-semibold mb-2">About Us</h3>
-              <ul class="space-y-1">
+              <h3 class="text-md font-bold text-[#204674] mb-3 tracking-wide uppercase">About Us</h3>
+              <ul class="space-y-1 text-[#204674]">
                 <li><a href="#" class="block hover:text-orange-500">Our Story</a></li>
                 <li><a href="#" class="block hover:text-orange-500">FAQs</a></li>
                 <li><a href="#" class="block hover:text-orange-500">Careers</a></li>
