@@ -26,6 +26,7 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   <ul class="hidden md:flex gap-4 font-medium relative">
   
   <li class="relative group nav-item">
+  <div class="nav-trigger">
   <a href="#" class="hover:text-orange-600">Services</a>
   <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden z-50 px-4 py-3 text-sm submenu">
   <h3 class="text-[#204674] text-sm font-extrabold uppercase tracking-wide leading-tight">Residential Construction</h3>
@@ -41,9 +42,11 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   <li><a href="/services/flooring-tiling.html" class="block hover:text-orange-500">Flooring & Tiling</a></li>
   </ul>
   </div>
+  </div>
   </li>
   
   <li class="relative group nav-item">
+  <div class="nav-trigger">
   <a href="#" class="hover:text-orange-600">Process</a>
   <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden z-50 submenu">
   <h3 class="text-sm font-extrabold text-[#204674] uppercase tracking-wide leading-tight">Our Process</h3>
@@ -51,9 +54,11 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   <li><a href="/process/pricing.html" class="block hover:text-orange-500">Pricing</a></li>
   </ul>
   </div>
+  </div>
   </li>
   
   <li class="relative group nav-item">
+  <div class="nav-trigger">
   <a href="#" class="hover:text-orange-600">Results</a>
   <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden z-50 submenu">
   <h3 class="text-sm font-extrabold text-[#204674] uppercase tracking-wide leading-tight">Our Results</h3>
@@ -63,9 +68,11 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   <li><a href="/results/share-your-story.html" class="block hover:text-orange-500">Share Your Story</a></li>
   </ul>
   </div>
+  </div>
   </li>
   
   <li class="relative group nav-item">
+  <div class="nav-trigger">
   <a href="#" class="hover:text-orange-600">About</a>
   <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden z-50 submenu">
   <h3 class="text-sm font-extrabold text-[#204674] uppercase tracking-wide leading-tight">About Us</h3>
@@ -74,6 +81,7 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   <li><a href="/about/faq.html" class="block hover:text-orange-500">FAQ</a></li>
   <li><a href="/about/articles.html" class="block hover:text-orange-500">Articles</a></li>
   </ul>
+  </div>
   </div>
   </li>
   
@@ -87,10 +95,10 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   </nav>
   
   <script>
-  const navItems=document.querySelectorAll('.nav-item');
-  navItems.forEach(item=>{
-  item.addEventListener('mouseenter',()=>{closeAll();item.querySelector('.submenu').classList.remove('hidden')});
-  item.addEventListener('mouseleave',()=>{item.querySelector('.submenu').classList.add('hidden')});
+  const triggers=document.querySelectorAll('.nav-trigger');
+  triggers.forEach(trigger=>{
+  trigger.addEventListener('mouseenter',()=>{closeAll();trigger.querySelector('.submenu').classList.remove('hidden')});
+  trigger.addEventListener('mouseleave',()=>{trigger.querySelector('.submenu').classList.add('hidden')});
   });
   function closeAll(){document.querySelectorAll('.submenu').forEach(menu=>menu.classList.add('hidden'));}
   </script>  
