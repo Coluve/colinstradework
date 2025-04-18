@@ -15,18 +15,19 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
 </head>
 <body class="bg-[#fffaeb] text-[#204674] text-sm">
 
-<!-- Navigation --> 
-<nav class="bg-white shadow-sm sticky top-0 z-50 text-sm">
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50 text-sm" id="navbar">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-4">
   <div class="flex items-center gap-2">
   <img src="/assets/images/logo-icon.png" alt="Logo Icon" class="w-6 h-6">
   <div class="text-xl font-bold tracking-wide">Colin's Tradework</div>
   </div>
-  <div class="flex items-center gap-4">
-  <ul class="hidden md:flex gap-4 font-medium">
-  <li class="relative group">
+  <div class="flex items-center gap-4 relative">
+  <ul class="hidden md:flex gap-4 font-medium relative">
+  
+  <li class="relative group nav-item">
   <a href="#" class="hover:text-orange-600">Services</a>
-  <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden group-hover:block z-50 px-4 py-3 text-sm">
+  <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md hidden z-50 px-4 py-3 text-sm submenu">
   <h3 class="text-[#204674] text-sm font-extrabold uppercase tracking-wide leading-tight">Residential Construction</h3>
   <ul class="text-[#204674] text-sm font-normal mt-1 space-y-0.5">
   <li><a href="/services/new-home-construction.html" class="block hover:text-orange-500">New Home Construction</a></li>
@@ -41,18 +42,20 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   </ul>
   </div>
   </li>
-  <li class="relative group">
+  
+  <li class="relative group nav-item">
   <a href="#" class="hover:text-orange-600">Process</a>
-  <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden group-hover:block z-50">
+  <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden z-50 submenu">
   <h3 class="text-sm font-extrabold text-[#204674] uppercase tracking-wide leading-tight">Our Process</h3>
   <ul class="space-y-1">
   <li><a href="/process/pricing.html" class="block hover:text-orange-500">Pricing</a></li>
   </ul>
   </div>
   </li>
-  <li class="relative group">
+  
+  <li class="relative group nav-item">
   <a href="#" class="hover:text-orange-600">Results</a>
-  <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden group-hover:block z-50">
+  <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden z-50 submenu">
   <h3 class="text-sm font-extrabold text-[#204674] uppercase tracking-wide leading-tight">Our Results</h3>
   <ul class="space-y-1">
   <li><a href="/results/before-after-gallery.html" class="block hover:text-orange-500">Before & After Gallery</a></li>
@@ -61,9 +64,10 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   </ul>
   </div>
   </li>
-  <li class="relative group">
+  
+  <li class="relative group nav-item">
   <a href="#" class="hover:text-orange-600">About</a>
-  <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden group-hover:block z-50">
+  <div class="absolute mt-2 left-0 w-60 p-4 rounded shadow bg-white hidden z-50 submenu">
   <h3 class="text-sm font-extrabold text-[#204674] uppercase tracking-wide leading-tight">About Us</h3>
   <ul class="space-y-1">
   <li><a href="/about/our-story.html" class="block hover:text-orange-500">Our Story</a></li>
@@ -72,6 +76,7 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   </ul>
   </div>
   </li>
+  
   </ul>
   <div class="flex items-center gap-1 text-[#a42838] font-medium">
   <i class="fas fa-phone-alt text-xs"></i><span>(203) 522-0215</span>
@@ -80,6 +85,15 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   </div>
   </div>
   </nav>
+  
+  <script>
+  const navItems=document.querySelectorAll('.nav-item');
+  navItems.forEach(item=>{
+  item.addEventListener('mouseenter',()=>{closeAll();item.querySelector('.submenu').classList.remove('hidden')});
+  item.addEventListener('mouseleave',()=>{item.querySelector('.submenu').classList.add('hidden')});
+  });
+  function closeAll(){document.querySelectorAll('.submenu').forEach(menu=>menu.classList.add('hidden'));}
+  </script>  
   
 <!-- Hero -->
 <section role="region" aria-label="Hero Section" class="relative h-[50vh] w-full bg-cover bg-center flex items-center justify-center text-white" style="background: url('https://source.unsplash.com/1600x800/?bathroom,remodeling') center/cover, #ccc;">
