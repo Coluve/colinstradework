@@ -15,18 +15,21 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
 </head>
 <body class="bg-[#fffaeb] text-[#204674] text-sm">
 
-  <!-- Navigation -->
+   <!-- Navigation Header -->
   <nav class="bg-white shadow-sm sticky top-0 z-50 text-sm">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-4">
       <div class="flex items-center gap-2">
         <img src="/assets/images/logo-icon.png" alt="Logo Icon" class="w-6 h-6">
         <div class="text-xl font-bold tracking-wide">Colin's Tradework</div>
       </div>
-      <div class="flex items-center gap-4">
-        <ul class="hidden md:flex gap-4 font-medium relative">
+  
+      <div class="flex items-center gap-6">
+        <ul class="hidden md:flex gap-6 font-medium items-center relative">
+
+          <!-- Main Navigations Items -->
           <li class="relative group">
             <a href="/services.html" class="hover:text-orange-600">Services</a>
-            <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+            <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md transform scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out p-4 z-50">
               <h3><a href="/services.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Residential Construction</a></h3>
               <ul class="text-[#204674] text-sm mt-2 space-y-1">
                 <li><a href="/services/remodeling.html" class="block hover:text-orange-500">Home Remodeling & Renovations</a></li>
@@ -37,18 +40,20 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
               </ul>
             </div>
           </li>
+  
           <li class="relative group">
             <a href="/process.html" class="hover:text-orange-600">Process</a>
-            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md transform scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out p-4 z-50">
               <h3><a href="/process.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Our Process</a></h3>
               <ul class="text-[#204674] text-sm mt-2 space-y-1">
                 <li><a href="/process/pricing.html" class="block hover:text-orange-500">Pricing</a></li>
               </ul>
             </div>
           </li>
+  
           <li class="relative group">
             <a href="/results.html" class="hover:text-orange-600">Results</a>
-            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md transform scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out p-4 z-50">
               <h3><a href="/results.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Our Results</a></h3>
               <ul class="text-[#204674] text-sm mt-2 space-y-1">
                 <li><a href="/results/gallery.html" class="block hover:text-orange-500">Before & After Gallery</a></li>
@@ -57,9 +62,10 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
               </ul>
             </div>
           </li>
+  
           <li class="relative group">
             <a href="/about.html" class="hover:text-orange-600">About</a>
-            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md transform scale-95 opacity-0 invisible group-hover:scale-100 group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out p-4 z-50">
               <h3><a href="/about.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">About Us</a></h3>
               <ul class="text-[#204674] text-sm mt-2 space-y-1">
                 <li><a href="/about/story.html" class="block hover:text-orange-500">Our Story</a></li>
@@ -68,28 +74,22 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
               </ul>
             </div>
           </li>
-        </ul>
   
-        <!-- Phone & Button -->
-        <div class="flex items-center gap-1 text-[#a42838] font-medium">
-          <i class="fas fa-phone-alt text-xs"></i>
-          <span>(203) 522-0215</span>
-        </div>
-        <a href="/consultation.html" class="bg-[#a42838] text-white px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-[#891e2f] whitespace-nowrap">
-          Free Consultation
-        </a>
+          <!-- Phone and Button -->
+          <li class="flex items-center gap-2 ml-6">
+            <i class="fas fa-phone-alt text-[#a42838] text-xs"></i>
+            <span class="text-[#a42838] font-semibold">(203) 522-0215</span>
+          </li>
+          <li>
+            <a href="/consultation.html" class="bg-[#a42838] text-white px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-[#891e2f] whitespace-nowrap">
+              Free Consultation
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
   
-  <script>
-    // Prevent nav links from "locking open" on click
-    document.querySelectorAll('nav ul > li > a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault(); // Prevent jumping or locking focus
-      });
-    });
-    </script>
 
 <!-- Hero -->
 <section role="region" aria-label="Hero Section" class="relative h-[50vh] w-full bg-cover bg-center flex items-center justify-center text-white" style="background: url('https://source.unsplash.com/1600x800/?bathroom,remodeling') center/cover, #ccc;">
