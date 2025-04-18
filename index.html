@@ -15,61 +15,72 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
 </head>
 <body class="bg-[#fffaeb] text-[#204674] text-sm">
 
-<!-- Navigation -->
-<nav class="bg-white shadow-sm sticky top-0 z-50 text-sm">
-  <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-4">
-    <div class="flex items-center gap-2">
-      <img src="/assets/images/logo-icon.png" alt="Logo Icon" class="w-6 h-6">
-      <div class="text-xl font-bold tracking-wide">Colin's Tradework</div>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-4">
+      <div class="flex items-center gap-2">
+        <img src="/assets/images/logo-icon.png" alt="Logo Icon" class="w-6 h-6">
+        <div class="text-xl font-bold tracking-wide">Colin's Tradework</div>
+      </div>
+      <div class="flex items-center gap-4">
+        <ul class="hidden md:flex gap-4 font-medium relative">
+          <li class="relative group">
+            <a href="/services.html" class="hover:text-orange-600">Services</a>
+            <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+              <h3><a href="/services.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Residential Construction</a></h3>
+              <ul class="text-[#204674] text-sm mt-2 space-y-1">
+                <li><a href="/services/remodeling.html" class="block hover:text-orange-500">Home Remodeling & Renovations</a></li>
+                <li><a href="/services/kitchen-bath.html" class="block hover:text-orange-500">Kitchen & Bathroom Remodeling</a></li>
+                <li><a href="/services/deck-patio.html" class="block hover:text-orange-500">Deck & Patio Construction</a></li>
+                <li><a href="/services/painting.html" class="block hover:text-orange-500">Interior & Exterior Painting</a></li>
+                <li><a href="/services/flooring.html" class="block hover:text-orange-500">Flooring & Tiling</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="/process.html" class="hover:text-orange-600">Process</a>
+            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+              <h3><a href="/process.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Our Process</a></h3>
+              <ul class="text-[#204674] text-sm mt-2 space-y-1">
+                <li><a href="/process/pricing.html" class="block hover:text-orange-500">Pricing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="/results.html" class="hover:text-orange-600">Results</a>
+            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+              <h3><a href="/results.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Our Results</a></h3>
+              <ul class="text-[#204674] text-sm mt-2 space-y-1">
+                <li><a href="/results/gallery.html" class="block hover:text-orange-500">Before & After Gallery</a></li>
+                <li><a href="/results/testimonials.html" class="block hover:text-orange-500">Customer Testimonials</a></li>
+                <li><a href="/results/share-story.html" class="block hover:text-orange-500">Share Your Story</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="/about.html" class="hover:text-orange-600">About</a>
+            <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all p-4 z-50">
+              <h3><a href="/about.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">About Us</a></h3>
+              <ul class="text-[#204674] text-sm mt-2 space-y-1">
+                <li><a href="/about/story.html" class="block hover:text-orange-500">Our Story</a></li>
+                <li><a href="/about/faq.html" class="block hover:text-orange-500">FAQ</a></li>
+                <li><a href="/about/articles.html" class="block hover:text-orange-500">Articles</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+  
+        <!-- Phone & Button -->
+        <div class="flex items-center gap-1 text-[#a42838] font-medium">
+          <i class="fas fa-phone-alt text-xs"></i>
+          <span>(203) 522-0215</span>
+        </div>
+        <a href="/consultation.html" class="bg-[#a42838] text-white px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-[#891e2f] whitespace-nowrap">
+          Free Consultation
+        </a>
+      </div>
     </div>
-
-    <div class="flex items-center gap-4">
-      <ul class="hidden md:flex gap-4 font-medium relative">
-        <li class="relative group">
-          <a href="#" class="hover:text-orange-600">Services</a>
-          <div class="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity p-4 z-50">
-            <h3><a href="/services.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Residential Construction</a></h3>
-            <ul class="text-[#204674] text-sm mt-2 space-y-1">
-              <li><a href="#" class="block hover:text-orange-500">Home Remodeling & Renovations</a></li>
-              <li><a href="#" class="block hover:text-orange-500">Kitchen & Bathroom Remodeling</a></li>
-              <li><a href="#" class="block hover:text-orange-500">Deck & Patio Construction</a></li>
-              <li><a href="#" class="block hover:text-orange-500">Interior & Exterior Painting</a></li>
-              <li><a href="#" class="block hover:text-orange-500">Flooring & Tiling</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="relative group">
-          <a href="#" class="hover:text-orange-600">Process</a>
-          <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity p-4 z-50">
-            <h3><a href="/process.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Our Process</a></h3>
-            <ul class="text-[#204674] text-sm mt-2 space-y-1">
-              <li><a href="#" class="block hover:text-orange-500">Pricing</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="relative group">
-          <a href="#" class="hover:text-orange-600">Results</a>
-          <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity p-4 z-50">
-            <h3><a href="/results.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">Our Results</a></h3>
-            <ul class="text-[#204674] text-sm mt-2 space-y-1">
-              <li><a href="#" class="block hover:text-orange-500">Before & After Gallery</a></li>
-              <li><a href="#" class="block hover:text-orange-500">Customer Testimonials</a></li>
-              <li><a href="#" class="block hover:text-orange-500">Share Your Story</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="relative group">
-          <a href="#" class="hover:text-orange-600">About</a>
-          <div class="absolute left-0 mt-2 w-60 bg-white shadow-lg rounded-md invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity p-4 z-50">
-            <h3><a href="/about.html" class="block text-[#204674] text-sm font-bold uppercase tracking-wide leading-tight hover:text-orange-600">About Us</a></h3>
-            <ul class="text-[#204674] text-sm mt-2 space-y-1">
-              <li><a href="#" class="block hover:text-orange-500">Our Story</a></li>
-              <li><a href="#" class="block hover:text-orange-500">FAQ</a></li>
-              <li><a href="#" class="block hover:text-orange-500">Articles</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+  </nav>
   
   <script>
     // Prevent nav links from "locking open" on click
@@ -79,15 +90,6 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
       });
     });
     </script>
-
-  <!-- Phone and CTA -->
-  <div class="flex items-center gap-1 text-[#a42838] font-medium">
-    <i class="fas fa-phone-alt text-xs"></i><span>(203) 522-0215</span>
-  </div>
-  <a href="#" class="bg-[#a42838] text-white px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-[#891e2f] whitespace-nowrap">Free Consultation</a>
-</div>
-</div>
-</nav>
 
 <!-- Hero -->
 <section role="region" aria-label="Hero Section" class="relative h-[50vh] w-full bg-cover bg-center flex items-center justify-center text-white" style="background: url('https://source.unsplash.com/1600x800/?bathroom,remodeling') center/cover, #ccc;">
