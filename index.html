@@ -96,40 +96,46 @@ nav li:hover>div,nav li:focus-within>div,nav li>div:hover{display:block;visibili
   </div>
 </section>
 
-<!-- CTA Features + Form -->
-<section class="bg-[#f9f9f9] border-t border-gray-300 py-12 px-6">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-2 md:grid-cols-4 text-center gap-6 mb-12">
-      <div><p class="font-semibold text-theme-navy">Free Consultation Service</p></div>
-      <div><p class="font-semibold text-theme-navy">Quality Materials</p></div>
-      <div><p class="font-semibold text-theme-navy">Professional Construction</p></div>
-      <div><p class="font-semibold text-theme-navy">Long-Term Warranties</p></div>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      <div><img src="https://source.unsplash.com/800x600/?bathroom,design" class="rounded shadow" alt="Design Interior"></div>
-      <div>
-        <h2 class="text-3xl font-bold mb-6">Schedule Your Free<br>Consultation</h2>
-        <form id="quoteForm" class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-          <input name="firstName" type="text" placeholder="First name*" required class="px-4 py-2 border rounded">
-          <input name="lastName" type="text" placeholder="Last name*" required class="px-4 py-2 border rounded">
-          <input name="email" type="email" placeholder="Email address*" required class="px-4 py-2 border rounded">
-          <input name="phone" type="tel" placeholder="Phone number*" required class="px-4 py-2 border rounded">
-          <input name="city" type="text" placeholder="City" class="px-4 py-2 border rounded">
-          <input name="zip" type="text" placeholder="Zip code*" required class="px-4 py-2 border rounded">
-          <div class="col-span-full flex items-center gap-2">
-            <input id="smsConsent" type="checkbox" class="w-4 h-4">
-            <label for="smsConsent" class="text-xs text-gray-600">By checking this box, I consent to receive SMS from Colin’s Tradework.</label>
-          </div>
-          <p class="col-span-full text-xs text-gray-500">Reply STOP to opt-out. Message & data rates may apply. <a href="#" class="underline">Terms</a> | <a href="#" class="underline">Privacy Policy</a></p>
-          <div class="col-span-full"><button type="submit" class="bg-[#a42838] hover:bg-[#891e2f] text-white px-6 py-2 rounded-full font-semibold">Get Quote</button></div>
-        </form>
+<!-- CTA Features + Form (Banner Style) -->
+<section class="bg-[#f9f9f9] border-t border-b border-gray-300 py-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-4">
+    
+    <!-- Features -->
+    <div class="flex flex-wrap justify-center md:justify-start gap-8 text-center text-[#204674] text-sm font-semibold">
+      <div class="flex flex-col items-center">
+        <i class="fas fa-pencil-ruler text-2xl mb-2 text-[#5dbcca]"></i>
+        <span>Free Design Service</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <i class="fas fa-th-large text-2xl mb-2 text-[#5dbcca]"></i>
+        <span>Quality Materials</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <i class="fas fa-tools text-2xl mb-2 text-[#5dbcca]"></i>
+        <span>Professional Installation</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <i class="fas fa-certificate text-2xl mb-2 text-[#5dbcca]"></i>
+        <span>Long-Term Warranties</span>
       </div>
     </div>
+
+    <!-- Short Form -->
+    <form class="flex flex-wrap justify-center md:justify-end gap-2 items-center text-xs w-full md:w-auto">
+      <label class="font-bold mr-2 text-center md:text-left text-[#3c4c59]">Schedule Your Free Design Consultation</label>
+      <input type="text" placeholder="First name*" class="px-3 py-1 border rounded w-28">
+      <input type="text" placeholder="Last name*" class="px-3 py-1 border rounded w-28">
+      <input type="email" placeholder="Email*" class="px-3 py-1 border rounded w-32">
+      <input type="tel" placeholder="Phone*" class="px-3 py-1 border rounded w-28">
+      <input type="text" placeholder="Zip code*" class="px-3 py-1 border rounded w-24">
+      <button type="submit" class="bg-[#a42838] text-white font-semibold px-4 py-1.5 rounded-full hover:bg-[#891e2f]">Submit</button>
+      <div class="flex items-center col-span-full mt-2 text-gray-600 text-[10px]">
+        <input id="smsConsent" type="checkbox" class="mr-1"><label for="smsConsent">By checking this box, I consent to receive SMS from Colin’s Tradework.</label>
+      </div>
+    </form>
+
   </div>
 </section>
-<script>
-document.getElementById('quoteForm').addEventListener('submit',e=>{e.preventDefault();alert("Form submission placeholder.");});
-</script>
 
 <!-- Process Section -->
 <section class="bg-white py-20 px-6 text-center">
